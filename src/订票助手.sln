@@ -1,8 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOBA.AutoVc", "TOBA.AutoVc\TOBA.AutoVc.csproj", "{C356C447-289B-4912-8C2F-4151DC170F8E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOBA.AutoVc.DemoVc", "TOBA.AutoVc.Demo\TOBA.AutoVc.DemoVc.csproj", "{2167283A-3C95-4475-99BB-EE2C232CF5C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOBA", "TOBA\TOBA.csproj", "{AAE86A95-050C-4DBA-A804-C8F8152DB52C}"
 EndProject
@@ -16,13 +17,15 @@ Global
 		{C356C447-289B-4912-8C2F-4151DC170F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C356C447-289B-4912-8C2F-4151DC170F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C356C447-289B-4912-8C2F-4151DC170F8E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2167283A-3C95-4475-99BB-EE2C232CF5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2167283A-3C95-4475-99BB-EE2C232CF5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2167283A-3C95-4475-99BB-EE2C232CF5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2167283A-3C95-4475-99BB-EE2C232CF5C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAE86A95-050C-4DBA-A804-C8F8152DB52C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAE86A95-050C-4DBA-A804-C8F8152DB52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAE86A95-050C-4DBA-A804-C8F8152DB52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAE86A95-050C-4DBA-A804-C8F8152DB52C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7F85753-12F2-4EF5-85C0-70203318FBDF}
 	EndGlobalSection
 EndGlobal
