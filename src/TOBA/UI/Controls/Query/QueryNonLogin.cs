@@ -27,7 +27,7 @@ namespace TOBA.UI.Controls.Query
 			AttachedControl = _contentPanel;
 			_contentPanel.Controls.Add(new QueryPage(_session, ProgramConfiguration.Instance.DefaultQuery) { Dock = DockStyle.Fill });
 			parent.Controls.Add(_contentPanel);
-			_control.Tabs.Add(this, 1);
+			_control.Tabs.Add(this, 0);
 
 			Text = "查票(未登录)";
 			Image = Properties.Resources.testtube_16;

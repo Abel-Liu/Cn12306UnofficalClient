@@ -54,13 +54,9 @@ namespace TOBA.UI.Controls.Account
 			TaskManager.Instance.EnqueueTask("获得账号【" + session.UserName + "】的注册用户姓名", () => new GetDisplayNameWorker() { Session = Session }.Run());
 			Image = session.TemporaryMode ? Properties.Resources.cou_16_protection : session.ShadowMode ? Properties.Resources.cou_16_users : Properties.Resources.user_16;
 
-
-			//find index
 			_controlParent = parent;
-			var last = parent.Tabs.OfType<UserTabDnb>().LastOrDefault();
-			var idx = last == null ? 1 : parent.Tabs.IndexOf(last) + 1;
 
-			parent.Tabs.Add(this, idx);
+			parent.Tabs.Add(this, parent.Tabs.Count);
 		}
 
 		public void Remove()

@@ -1182,6 +1182,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Assets\SR.resx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -1221,6 +1222,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Controls\MainFrame\TopNav.resx">
       <DependentUpon>TopNav.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Controls\Misc\ForumNews.resx">
       <DependentUpon>ForumNews.cs</DependentUpon>

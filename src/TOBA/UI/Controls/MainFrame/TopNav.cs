@@ -39,13 +39,10 @@ namespace TOBA.UI.Controls.MainFrame
 			};
 			btnOpt.Click += (s, e) => new ConfigCenter().ShowDialog();
 			btnQueryWithoutLogin.Click += (s, e) => MainForm.Instance.OpenQueryPageWithoutLogin();
-			btnLearn.Click += (s, e) => Shell.StartUrl("https://blog.iccfish.com/docs/%E8%AE%A2%E7%A5%A8%E5%8A%A9%E6%89%8B-net/");
 			btnLoginUsingQr.Click += (s, e) =>
 			{
 				new QrLogin().Show(this.FindForm());
 			};
-
-			InitLinks();
 
 			var endDate = ParamData.GetMaxTicketDate(false);
 			de.Date = endDate;
@@ -54,29 +51,6 @@ namespace TOBA.UI.Controls.MainFrame
 				de.Date = endDate;
 			};
 
-		}
-
-		void InitLinks()
-		{
-			pSupport.Style.BorderSide &= ~eBorderSide.Left;
-			//btnSupportAbout.Click += (s, e) =>
-			//{
-			//	FSLib.Windows.Interactive.Shell.StartUrl("https://www.fishlee.net/soft/12306/");
-			//};
-			btnSupportDonate.Click += (s, e) =>
-			{
-				Shell.StartUrl("https://blog.iccfish.com/about/donate/");
-			};
-			btnSupportWb.Click += (s, e) =>
-			{
-				Shell.StartUrl("https://weibo.com/imcfish");
-			};
-			btnSupportBlog.Click += (s, e) =>
-			{
-				Shell.StartUrl("https://blog.iccfish.com/");
-			};
-			//btnSupportAbout.Click += (s, e) => Program.Studio.GetAboutForm().ShowDialog(this.FindForm());
-			btnSupportAbout.Click += (s, e) => new AboutMe().ShowDialog(this.FindForm());
 		}
 
 		void btnImport_PopupShowing(object sender, EventArgs e)

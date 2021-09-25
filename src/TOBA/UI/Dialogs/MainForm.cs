@@ -73,7 +73,6 @@ namespace TOBA.UI.Dialogs
 						SetTabPosition(GetAutoTabAlignment());
 				};
 			}
-			//tsHome.ToolTipText = "登录到鱼·后花园";
 		}
 
 		/// <summary>
@@ -288,12 +287,14 @@ namespace TOBA.UI.Dialogs
 				RunTime.SessionManager.Where(s => !s.UserProfile.IsPassengerLoaded).ForEach(s => s.AccquireLoadPassengers());
 			}
 
-			//在系统关闭时间，自动打开查询页
-			var (isOpen, _) = ParamData.GetSystemMaintenanceTime();
-			if (!isOpen)
-			{
-				OpenQueryPageWithoutLogin();
-			}
+			OpenQueryPageWithoutLogin();
+
+			////在系统关闭时间，自动打开查询页
+			//var (isOpen, _) = ParamData.GetSystemMaintenanceTime();
+			//if (!isOpen)
+			//{
+			//	OpenQueryPageWithoutLogin();
+			//}
 		}
 
 		void MainForm_Shown(object sender, EventArgs e)
@@ -519,10 +520,6 @@ namespace TOBA.UI.Dialogs
 			//tabUser.TabPages.Add(new SysLogTab());
 			//TODO 处理注册
 
-			//状态栏
-			stuAdvGithub.Click += (_, __) => Shell.StartUrl("https://github.com/iccfish/Cn12306UnofficalClient/issues");
-			stuAdvAsk.Click += (_, __) => Shell.StartUrl("https://forum.iccfish.com/forum.php?gid=1");
-
 			stuMute.Visible = false;
 
 			//tsViewMoreFilterOption.CheckOnClick = true;
@@ -537,8 +534,7 @@ namespace TOBA.UI.Dialogs
 
 		void RefreshTitle()
 		{
-			var title = $"订票助手.NET V{AppContext.ClientVersion.FileMajorPart} ({AppContext.ClientVersion.FileVersion}/开源版";
-			title += " - 木魚诚意发布 - " + (DateTime.Now.Year - 2012) + "年相伴，愿岁月静好";
+			var title = $"订票助手.NET  {AppContext.ClientVersion.FileVersion}";
 
 			Text = title;
 		}

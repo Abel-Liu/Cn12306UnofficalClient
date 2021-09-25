@@ -473,7 +473,12 @@ namespace TOBA.UI.Controls.Query
 			_sleepTimer.Enabled = false;
 		}
 
-		#endregion
+        #endregion
 
-	}
+        private void btnQueryAllStation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+    }
 }
